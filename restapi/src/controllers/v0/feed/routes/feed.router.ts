@@ -34,16 +34,16 @@ router.patch('/:id',
         let {id} = req.params;
         let data = req.body;
         const item = await FeedItem.findByPk(id);
-        console.log('data', data);
-        if (item) {
-            // item.caption = data.caption;
-            // await item.save();
-            // await item.reload();
-            res.status(201).send(item);
-        } else {
+        if (!item) {
             res.status(404).send('Item not found')
+        } 
+        if (data.caption) {
+            item.caption = data.caption;
         }
-});
+        await item.save();
+        // await item.reload();
+        res.status(200).send(item);
+    });
 
 
 // Get a signed url to put a new item in the bucket
