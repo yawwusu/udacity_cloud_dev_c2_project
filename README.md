@@ -35,6 +35,6 @@ Prevent requests without valid authentication headers.
 Add your own domain name and have it point to the running services (try adding a subdomain name to point to the processing server) -->
 
 # SUBMISSION NOTES
-EB_ENDPOINT_URL: (http://udagram-image-filter-yaw-dev.us-east-1.elasticbeanstalk.com/)[http://udagram-image-filter-yaw-dev.us-east-1.elasticbeanstalk.com/]
-{{HOST}} variable: `udagram-image-filter-yaw-dev.us-east-1.elasticbeanstalk.com`
-SCREENSHOT: [In deployment_screenshots folder](https://github.com/yawwusu/udacity_cloud_dev_c2_project/blob/master/deployment_screenshots/udagram_image_filter_yaw_Screenshot.png?raw=true))
+- EB_ENDPOINT_URL: http://udagram-image-filter-yaw-dev.us-east-1.elasticbeanstalk.com/
+- `{{HOST}}` variable: `udagram-image-filter-yaw-dev.us-east-1.elasticbeanstalk.com`
+- SCREENSHOT: [In `deployment_screenshots` folder](https://github.com/yawwusu/udacity_cloud_dev_c2_project/blob/master/deployment_screenshots/udagram_image_filter_yaw_Screenshot.png)
