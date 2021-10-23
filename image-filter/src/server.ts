@@ -39,13 +39,20 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
       return res.status(400).send("No image_url included")
     }
 
-    // filters image using helper function
-    const filtered_image =  await filterImageFromURL(image_url)
+    try {
+      // filters image using helper function
+      const filtered_image =  await filterImageFromURL(image_url)
 
-    // cleanup - delete intermediary files
-    deleteLocalFiles([filtered_image])
+      res.status(200).sendFile(filtered_image, function() {
+        // cleanup - delete intermediary files
+        deleteLocalFiles([filtered_image])
+      });
+    }
+    catch(error) {
+      res.status(403).send(error)
+    }
 
-    return res.status(200).sendFile(filtered_image)
+    
 
   } );
   
