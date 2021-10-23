@@ -20,11 +20,13 @@ You'll need to create a new node server. Open a new terminal within the project 
 
 ### Includes:
 
-<!-- ### RESTapi
+### RESTapi
 
 If you're feeling up to it, refactor the course RESTapi to make a request to your newly provisioned image server.
 
-### Authentication
+### Frontend
+
+<!-- ### Authentication
 
 Prevent requests without valid authentication headers.
 

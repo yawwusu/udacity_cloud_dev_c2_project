@@ -12,7 +12,6 @@ log.txt
 .vscode/
 npm-debug.log*
 
-.env
 .idea/
 .ionic/
 .sourcemaps/
@@ -29,16 +28,17 @@ plugins/
 plugins/android.json
 plugins/ios.json
 $RECYCLE.BIN/
+postgres_dev/
+logfile
 
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate
 node_modules
 venv/
-exercises/
+.env
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
-
