@@ -49,7 +49,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
       });
     }
     catch(error) {
-      res.status(403).send(error)
+      res.status(422).send(error)
     }
 
     
